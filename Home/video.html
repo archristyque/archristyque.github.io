@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Coming Never?</title>
+  <link rel="shortcut icon" href="browsericon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.typekit.net/xnz7aiu.css">
+
+</head>
+<body>
+
+
+<!-- The video -->
+<div class="purplevideo">
+<video autoplay muted loop id="myVideo" class="centrevideo">
+  <source src="explainervid.mp4" type="video/mp4">
+</video>
+  <!-- Use a button to pause/play the video with JavaScript -->
+ <!--  <button id="myBtn" onclick="pauseFunction()">Pause</button> -->
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+
+<script src="main.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+
+</body>
+</html>

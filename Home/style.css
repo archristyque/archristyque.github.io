@@ -1,0 +1,555 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #4e1a39;
+}
+
+#analysis {
+    color: #531f39;
+    text-decoration: underline;
+     -moz-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
+    -webkit-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+    cursor: url(no-cursor.png), not-allowed;
+}
+
+#analysis:hover { 
+  background-color: #bcd2fd;
+  color: #ff4038;
+}
+
+a, a:visited {cursor: pointer;
+  text-decoration: none;
+  color:inherit;
+         -moz-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
+    -webkit-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+}
+
+a:hover { 
+  color: rgba(0,0,0,0.4);
+  cursor: pointer;
+  /* filter: brightness(250%); */
+}
+
+
+#linkblur {
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+      webkit-filter: blur(5px); /* Chrome, Safari, Opera */
+    filter: blur(5px);
+}
+
+#linkblur:hover {
+  webkit-filter: blur(0px); /* Chrome, Safari, Opera */
+    filter: blur(0px);
+}
+
+.header {
+    z-index: 99;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  background: #ff4038;
+  color: #fffce9;
+  text-align: center;
+
+ font-family: freight-text-pro, serif;
+font-weight: 500;
+font-style: normal;
+font-size: 18px;
+line-height: 19px;
+
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.12)
+}
+
+.headercolumn {
+flex-grow: 1;
+}
+
+.headercolumn:hover {
+    position: relative;
+}
+.headercolumn:hover:after {
+    /* content: url(header-circle.png); /* no need for quotes */
+   /* display: block;
+    position: absolute;
+    align-content: center;
+    left: 42px; /* change this value to one that suits you */
+   /* top: 55px; /* change this value to one that suits you */ 
+}
+
+.headerfiller {
+flex-grow: 4; /* default 0 */
+}
+
+
+.headerlogo {
+    font-family: termina, sans-serif;
+    font-size: 18px;
+font-weight: 500;
+font-style: normal;
+line-height: 16px;
+flex-grow: 1;
+padding-left: 5px;
+}
+
+
+h2, .text {font-family: p22-underground, sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 27px;
+color: #fffce9;
+line-height: 32px;
+}
+
+.bodycontainer {
+  background-image: url(HomeBG.jpg);
+  display: flex;
+  height: 550px;
+  width: 100%;
+justify-content: center;
+}
+
+.bodyfiller {
+flex-grow: 1.7; /* default 0 */
+}
+
+.cards {
+  padding-top: 100px;
+  width: 500px;
+    margin: 0px;
+font-family: p22-underground, sans-serif;
+font-weight: 600;
+font-style: normal;
+font-size: 24px;
+line-height: 26px;
+color: #531f39;
+flex-grow: 1;
+}
+
+#bigheader {
+  font-family: termina, sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: 80px;
+line-height: 60px;
+webkit-filter: blur(0px); /* Chrome, Safari, Opera */
+    filter: blur(0px);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+#bigheader:hover {
+webkit-filter: blur(8px); /* Chrome, Safari, Opera */
+    filter: blur(8px);
+    cursor: url(no-cursor.png), pointer;
+}
+
+
+#imgcensor {
+      cursor: url(no-cursor.png), pointer;
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+      webkit-filter: blur(12px); /* Chrome, Safari, Opera */
+    filter: blur(12px);
+}
+
+#imgcensor:hover {
+    webkit-filter: blur(0px); /* Chrome, Safari, Opera */
+    filter: blur(0px);
+        
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 80px;
+}
+
+.backgroundcontainer{
+  z-index: 98;
+  background-color: #531f39;
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+  justify-content: center;
+  padding-left: 300px;
+}
+
+.background-blurb{
+width: 500px;
+    margin: 0px;
+font-family: p22-underground, sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: 23px;
+line-height: 27px;
+color: #ff4038;
+align-content: center;
+}
+
+.background{
+width: 500px;
+    margin: 0px;
+font-family: freight-text-pro, serif;
+font-weight: 500;
+font-style: normal;
+font-size: 25px;
+line-height: 27px;
+color: white;
+align-content: center;
+padding-bottom: 50px;
+}
+
+* {box-sizing:border-box}
+
+#initial{
+  color: #fffce9;
+  float: left;
+  font-family: freight-text-pro, serif;
+font-weight: 400;
+font-style: normal;
+  font-size: 80px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 12px;
+  padding-left: 3px;
+}
+
+
+h3 {
+font-family: freight-text-pro, serif;
+font-weight: 300;
+font-style: italic;
+  font-size: 150px;
+  line-height: 100px;
+  text-align: center;
+  color: #531f39;
+  letter-spacing: -8px;
+  padding-top: 50px;
+  margin: 10px;
+
+   transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+
+}
+
+
+h3:hover {
+  font-family: freight-text-pro, serif;
+  font-weight: 700;
+letter-spacing: -5px;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.caption {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+
+/* SCROLLABLE LIST */
+.listdiv{
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+  justify-content: center;
+  padding-left: 300px;
+  padding-bottom: 100px;
+}
+
+
+.listcontainer {
+  position: relative;
+  float: right;
+  width: 80%;
+  height: 600px;
+  background-color: #fffce9;
+  margin-top: 30px;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  text-align: left;
+  border-radius: 4px;
+  padding: 0pxx;
+ }
+ 
+ .text {
+    position: fixed;
+    font-size: 12px;
+    font-family: p22-underground, sans-serif;
+font-weight: 400;
+font-style: normal;
+    color: rgb(116,124,142);
+    float: left;
+    padding: 10px 0px 0px 40px;
+  }
+  
+  .box {
+    position: absolute;
+    padding: 20px 50px 0px 30px;
+    color: rgb(116,124,142);
+    font-size: 25px;
+    overflow-y: auto;
+    height: 600px;
+
+    font-family: p22-underground, sans-serif;
+font-weight: 400;
+font-style: normal;
+  }
+  
+ 
+
+  ol {
+    display: block;
+    padding: 0 0 0 26px;
+    list-style: none;
+    overflow: hidden;
+    counter-reset: numList;
+}
+ol li {
+    width: 250px;
+    margin-right: 44px;
+    margin-bottom: 55px;
+    left: 50px;
+    position: relative
+}
+ol li:before {
+    counter-increment: numList;
+    content: counter(numList);
+    
+    position: absolute;
+    left: -60px;
+    
+    font-family: prohibition, sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 20px;
+    text-align: center;
+    color: #fffce9;
+    line-height: 38px;
+    
+    width: 40px; height: 40px;
+    background: #ff4038;
+    
+    -moz-border-radius: 999px;
+    border-radius: 999px
+}
+
+  .link-item {
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(87,135,253);
+    text-align: right;
+    padding-right: 40px;
+    text-decoration: none;
+  }
+
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffccc5; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff4038; 
+  border-radius: 8px;
+  
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #531f39; 
+}
+
+
+/* DATA VISUALISATION */
+.dataviz {
+  padding-top: 50px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+
+
+   font-family: p22-underground, sans-serif;
+font-weight: 600;
+font-style: normal;
+font-size: 25px;
+line-height: 27px;
+
+ transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+
+/*VIDEO STUFFS*/
+/* Style the video: 100% width and height to cover the entire window */
+.purplevideo {
+  text-align: center;
+  background-color: #4e1a39;
+  padding-bottom: 20px;
+}
+
+#myVideo {
+  position: relative;
+
+  width: 100%; 
+  height: 50%;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+.anythingfloating {
+   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.anythingfloating:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.yespleasebutton {
+  margin: 0 auto;
+  width: 180px;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+font-family: rigid-square, sans-serif;
+font-weight: 400;
+font-style: normal;
+    font-size: 20px;
+  color: #ff4038;
+  background-color: #4e1a39;
+  padding: 10px;
+  padding-top: 10px;
+  border: 1px solid;
+border-radius: 8px;
+margin-top: 30px;
+}
+
+.yespleasebutton:hover {
+  color: #fffce9;
+  background-color: #4e1a39;
+}
